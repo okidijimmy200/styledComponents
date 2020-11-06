@@ -35,6 +35,11 @@ const HeroSection = () => {
                     <Button to="signup" onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary="true"
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact='true'
+                    offset={-80}
                     dark="true">
                         Get started {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
